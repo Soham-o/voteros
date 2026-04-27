@@ -75,6 +75,7 @@ graph TD;
     C -->|Natural Conversation| E[Google Gemini Pro API];
     D --> F[Visual Dashboard Update];
     E --> G[Chat Copilot Update];
+```
 Rule-Based Decision Engine (llm_logic.py): Acts as the "Safety Net." It strictly governs state updates (Progress, Milestones, Forms) to ensure the UI never hallucinates or crashes due to LLM unpredictability.
 
 Google Vertex AI / Gemini Integration: Acts as the "Voice." It ingests the structured system context and generates natural, empathetic, and highly clear user-facing responses.
@@ -118,4 +119,4 @@ streamlit run main.py
 ☁️ Deployment
 VoterOS is containerized and deployed via Google Cloud Run for high availability and scalable performance during high-traffic election cycles.
 
-(See Dockerfile for containerization specifics).
+[(See Dockerfile for containerization specifics).](https://voteros-app-805910938723.asia-south1.run.app/)
